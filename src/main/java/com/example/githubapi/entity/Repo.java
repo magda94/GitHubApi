@@ -8,17 +8,17 @@ import java.time.LocalDateTime;
 @Data
 public class Repo {
     @JsonAlias({"full_name"})
-    String fullName;
+    private String fullName;
 
     @JsonAlias({"description"})
-    String description;
+    private String description;
 
     @JsonAlias({"clone_url"})
-    String cloneUrl;
+    private String cloneUrl;
 
     @JsonAlias({"stargazers_count"})
-    int stars;
+    private int stars;
 
     @JsonAlias({"created_at"})
-    LocalDateTime createdAt;
+    private LocalDateTime createdAt;
 }

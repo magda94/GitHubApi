@@ -37,7 +37,7 @@ public class RepoController {
     }
 
     private void addRequestToDatabase(String owner, String repoName) {
-        String endpoint = String.format("repositories/%s/%s", owner, repoName);
+        String endpoint = String.format("%s/%s", owner, repoName);
         String date = String.format("%Tc", new Date());
         repoRequestRepository.save(new RepoRequest(endpoint, date));
     }
